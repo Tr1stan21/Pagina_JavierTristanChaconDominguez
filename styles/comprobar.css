@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Teko:wght@300..700&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
+
+:root {
+	--negro: black;
+	--blanco: white;
+	--gris: #212121;
+	--grisclaro: #3a3939;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	background-color: var(--blanco);
+	color: var(--blanco);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4vh 0;
+    height: 65vh;
+}
+
+section {
+	background-color: var(--grisclaro);
+	color: var(--blanco);
+	padding: 2vw;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+	width: 36vw;
+	max-width: 95vw;
+	font-size: 1rem;
+}
+
+section h1 {
+	text-align: center;
+	margin-bottom: 2vh;
+	font-size: 1.5rem;
+}
+
+button {
+	margin-bottom: 1vh;
+	border: none;
+	border-radius: 4px;
+	font-size: 2vh;
+	padding: 0.6em 0.75em;
+	box-sizing: border-box;
+	background-color: var(--negro);
+	color: var(--blanco);
+	font-family: "Texturina";
+	font-weight: 900;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: var(--blanco);
+	color: var(--gris);
+}
+
+.botones {
+	padding-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#boton {
+	width: 49%;
+}
+
+#enlace{
+	width: 49%;
+}
+
+#enlace button {
+	width: 100%;
+}
+
+
+@media (max-width: 768px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main {
+		flex-direction: column;
+		padding: 2vw;
+		align-items: center;
+	}
+}

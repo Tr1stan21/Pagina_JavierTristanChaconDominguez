@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Teko:wght@300..700&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
+
+:root {
+	--negro: black;
+	--blanco: white;
+	--gris: #212121;
+	--grisclaro: #3a3939;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	width: 100%;
+	font-family: "Roboto", sans-serif;
+	background-color: var(--blanco);
+	color: var(--blanco);
+	display: flex;
+	justify-content: center;
+	gap: 6vw;
+}
+
+section {
+	background-color: var(--grisclaro);
+	padding: 2vw;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+	width: 32vw;
+	margin: 6vh 0;
+}
+
+h1 {
+	font-family: "Teko";
+	font-size: 5vh;
+	text-align: center;
+	margin-bottom: 2.5vh;
+}
+
+label {
+	display: block;
+	margin-bottom: 1vh;
+	font-weight: 700;
+}
+
+input,
+select,
+button {
+	width: 100%;
+	margin-bottom: 2vh;
+	border: none;
+	border-radius: 4px;
+	font-size: 2vh;
+	padding: 0.6em 0.75em;
+	box-sizing: border-box;
+}
+
+input,
+select {
+	background-color: var(--gris);
+	color: var(--blanco);
+}
+
+textarea::placeholder {
+    font-family: "Roboto", sans-serif;
+}
+
+button {
+	background-color: var(--negro);
+	color: var(--blanco);
+	font-family: "Texturina";
+	font-weight: 900;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+button:hover {
+	background-color: var(--blanco);
+	color: var(--gris);
+}
+
+#dudas {
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+#contacto {
+	color: var(--blanco);
+	text-decoration: underline;
+}
+
+.form-genero {
+	display: flex;
+	gap: 1vw;
+	margin-bottom: 2vh;
+}
+
+.form-genero input[type="radio"] {
+	width: auto;
+	margin-bottom: 0;
+}
+
+.form-genero label {
+	font-weight: 400;
+	margin-bottom: 0;
+}
+
+#mensaje {
+	resize: none;
+	background-color: var(--gris);
+	color: var(--blanco);
+	font-size: 1.75vh;
+	border-radius: 4px;
+	border: none;
+	padding: 1vh;
+	margin-bottom: 2vh;
+	width: 100%;
+}
+
+#modalidades {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center;
+	gap: 2vw;
+}
+
+.columna {
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+	align-items: flex-start;
+}
+
+.checkbox-label-group {
+	display: flex;
+	align-items: center;
+	gap: 0.5vw;
+	width: 100%;
+}
+
+.checkbox-label-group input[type="checkbox"] {
+	margin: 0;
+	width: auto;
+}
+
+.checkbox-label-group label {
+	margin: 0;
+	font-weight: 400;
+	display: inline-block;
+}
+
+#mensaje {
+	resize: none;
+	background-color: var(--gris);
+	color: var(--blanco);
+	font-size: 1.75vh;
+	border-radius: 4px;
+	border: none;
+	padding: 1vh;
+	margin-bottom: 2vh;
+	width: 100%;
+}
+
+#modalidades {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: center; 
+	gap: 2vw;
+	margin-bottom: 2vh;
+}
+
+.columna {
+	display: flex;
+	flex-direction: column;
+	gap: 1vh;
+	align-items: flex-start; 
+}
+
+.columna .checkbox-label-group {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start; 
+	gap: 0.5vw;
+	width: 100%;
+}
+
+.columna input[type="checkbox"],
+.columna label {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 0.5vw 0 0;
+}
+
+.columna > input[type="checkbox"] + label {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5vw;
+	margin-bottom: 0;
+}
+
+.columna > input[type="checkbox"] {
+	margin-right: 0.5vw;
+}
+
+
+@media (max-width: 768px) {
+	body {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main {
+		flex-direction: column;
+		padding: 2vw;
+		align-items: center;
+	}
+
+	section {
+		width: 90%;
+	}
+
+	h1 {
+		font-size: 4vh;
+	}
+
+	input,
+	select,
+	button {
+		font-size: 1.5vh;
+	}
+
+	#modalidades {
+		flex-direction: column;
+		align-items: center;
+		gap: 2vh;
+	}
+	.columna {
+		width: 100%;
+		align-items: flex-start;
+	}
+	.checkbox-label-group {
+		justify-content: flex-start;
+	}
+}

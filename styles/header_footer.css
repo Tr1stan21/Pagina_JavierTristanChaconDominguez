@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Teko:wght@300..700&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap");
+
+:root {
+	--negro: black;
+	--blanco: white;
+	--gris: #212121;
+	--grisclaro: #3a3939;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/*HEADER*/
+header {
+	height: 15vh;
+	display: flex;
+	background-color: var(--negro);
+	color: var(--blanco);
+	align-items: center;
+	justify-content: space-between;
+}
+
+.imgheader {
+	max-width: 100%;
+	height: 15vh;
+	width: auto;
+}
+
+header a {
+	height: 15vh;
+	width: auto;
+	border: none; 
+	display: flex;
+	align-items: center;
+}
+
+nav {
+	font-family: "Texturina";
+	height: 7.5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--gris);
+	color: var(--blanco);
+}
+
+nav a {
+	height: 7.5vh;
+	width: 8vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--blanco);
+	font-size: 2vh;
+	text-decoration: none;
+}
+
+.nav:hover {
+	background-color: var(--grisclaro);
+}
+
+
+/*FOOTER*/
+footer {
+	padding-left: 1vw;
+	height: 12.5vh;
+	background-color: var(--negro);
+	color: var(--blanco);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: "Segoe UI", Tahoma;
+}
+
+#logofooter {
+	height: 6vh;
+	padding-bottom: 1vh;
+}
+
+#disclaimer {
+	width: 42vw;
+}
+
+#redes {
+	padding-left: 2vw;
+	display: flex;
+}
+
+.redesimg {
+	height: 6vh;
+}
+
+.redeslink {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 3vw;
+	margin: 1vw;
+}
+
+#diseñado {
+	padding-top: 1vh;
+}
+
+#copyright,
+#diseñado,
+#disclaimer {
+	font-size: 1.75vh;
+}
+
+@media (max-width: 768px) {
+    header {
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+	}
+
+	.imgheader {
+		height: auto;
+		width: 90%;
+	}
+
+	nav {
+		flex-wrap: wrap;
+		height: 15vh;
+		width: 100vw;
+	}
+	nav a {
+		width: 100%;
+		height: 5vh;
+		text-align: center;
+		font-size: 2.2vh;
+		border: 0.1vw solid var(--blanco);
+		border-collapse: collapse;
+	}
+	
+	header a {
+		height: auto;
+		border: none;
+		width: auto;
+	}
+	footer {
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+		padding: 2vw;
+	}
+
+	#logofooter {
+		height: auto;
+		width: 50%;
+		margin-bottom: 1vh;
+	}
+
+	#disclaimer {
+		width: 90%;
+		margin-bottom: 2vh;
+	}
+
+	#redes {
+		justify-content: center;
+	}
+
+	.redesimg {
+		height: 5vh;
+		width: auto;
+	}
+
+	.redeslink {
+		margin: 1vh;
+	}
+
+	#contacto {
+		margin-top: 1.5vh;
+	}
+
+}
